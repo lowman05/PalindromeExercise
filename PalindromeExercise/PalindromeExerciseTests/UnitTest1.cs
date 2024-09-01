@@ -11,8 +11,10 @@ namespace PalindromeExerciseTests
         [InlineData("kayak", true)]
         [InlineData("deified", true)]
         [InlineData("mom", true)]
-        [InlineData("rotator", true)]
+        [InlineData("ROTATOR", true)]
         [InlineData("true", false)]
+        [InlineData("civic", true)]
+        [InlineData("hey", false)]
         public void PalindromeTest1(string word, bool expected)
         {
             var palindrome = new WordSmith();

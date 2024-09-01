@@ -6,7 +6,17 @@ namespace PalindromeExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            while (true)
+            {
+                Console.WriteLine("Please enter a word to check if it is a palindrome, or type 'exit' to leave.");
+                string userWord = Console.ReadLine();
+                if (userWord.ToLower() == "exit")
+                {
+                    break;
+                }
+                Console.WriteLine(WordSmith.PalindromeChecker(userWord));
+                
+            }
         }
     }
     
